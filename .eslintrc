@@ -1,0 +1,103 @@
+{
+  "root": true,
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "extends": [
+    "standard",
+    "plugin:react/recommended",
+    "plugin:react-hooks/recommended",
+    "plugin:react/jsx-runtime",
+    "prettier"
+  ],
+  "plugins": ["react", "react-hooks"],
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "rules": {
+    "no-shadow": 0,
+    "no-console": 0,
+    "react/jsx-key": 1,
+    "import/no-cycle": 0,
+    "arrow-body-style": 1,
+    "react/prop-types": 1,
+    "consistent-return": 1,
+    "no-param-reassign": 0,
+    "no-use-before-define": 0,
+    "no-underscore-dangle": 0,
+    "react/button-has-type": 1,
+    "react/no-children-prop": 0,
+    "react/forbid-prop-types": 0,
+    "jsx-a11y/anchor-is-valid": 0,
+    "react/react-in-jsx-scope": 0,
+    "react/no-array-index-key": 0,
+    "react/no-unused-prop-types": 1,
+    "react-hooks/rules-of-hooks": 0,
+    "no-promise-executor-return": 0,
+    "no-unsafe-optional-chaining": 0,
+    "react/require-default-props": 0,
+    "react/no-unescaped-entities": 0,
+    "import/prefer-default-export": 0,
+    "react/jsx-props-no-spreading": 0,
+    "react/jsx-filename-extension": 0,
+    "react/jsx-no-useless-fragment": 0,
+    "react/jsx-curly-brace-presence": 0,
+    "react/destructuring-assignment": 0,
+    "import/no-extraneous-dependencies": 0,
+    "import/no-named-as-default": 0,
+    "import/no-named-as-default-member": 0,
+    "react/no-unstable-nested-components": 0,
+    "react/function-component-definition": 0,
+    "react/jsx-no-constructed-context-values": 0,
+    "react/display-name": 0,
+    "react-hooks/exhaustive-deps": 0,
+    "no-unused-vars": [
+      0,
+      {
+        "ignoreRestSiblings": false
+      }
+    ],
+    "prefer-destructuring": [
+      1,
+      {
+        "object": true,
+        "array": false
+      }
+    ],
+    "import/order": [
+      "error",
+      {
+        "groups": ["builtin", "external", "internal", "sibling", "parent", "index"],
+        "pathGroups": [
+          {
+            "pattern": "react",
+            "group": "external",
+            "position": "before"
+          },
+          {
+            "pattern": "prop-types",
+            "group": "external",
+            "position": "before"
+          }
+        ],
+        "pathGroupsExcludedImportTypes": ["react"],
+        "newlines-between": "always",
+        "alphabetize": {
+          "order": "asc",
+          "caseInsensitive": true
+        }
+      }
+    ],
+    "prettier/prettier": "off"
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  }
+}

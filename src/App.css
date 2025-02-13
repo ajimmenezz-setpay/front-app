@@ -1,0 +1,31 @@
+#root {
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.notistack-SnackbarContainer {
+  width: calc(100dvh - 200px) !important;
+}
+
+#notistack-snackbar {
+  max-width: 95%;
+}
+
+.slick-slider .slick-slide img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.slick-slider {
+  height: 100%;
+}
+
+.slick-list {
+  height: 100% !important;
+}
+
+.simple-date-range {
+  > div {
+    box-shadow: none;
+  }
+}

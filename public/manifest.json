@@ -1,0 +1,8 @@
+{
+  "name": "SET | Soluciones Electrónicas Transaccionales App",
+  "short_name": "SET-App",
+  "display": "standalone",
+  "start_url": "/",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
